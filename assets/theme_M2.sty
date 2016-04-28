@@ -1,0 +1,30 @@
+\usepackage[left=2cm, right=2cm, top=3.75cm, bottom=4cm]{geometry}
+\usepackage{graphicx} 
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage[round,authoryear,sort]{natbib}
+\usepackage[T1]{fontenc}
+\usepackage[USenglish]{babel}
+\usepackage[bf]{caption}
+\usepackage{comment}
+
+% Changer le style de chapter
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{Chapter \thechapter :}{1em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{2.3ex plus .2ex}
+
+% Style des pages
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{37pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\rhead[{\includegraphics[width=10mm]{images/irap}}]{\textit{\thechapter~\leftmark}}
+\lhead[{\textit{\thesection~\rightmark}}]{ \includegraphics[width=10mm]{images/irap}}
+\rfoot[{\thepage}]{}
+\lfoot[{}]{\thepage}
