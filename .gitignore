@@ -1,0 +1,14 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+
+# PDF output 
+#*.pdf
+
+# Latexmk
+*.fdb_latexmk
+
+# BibTeX
+*.bbl
+*.blg
