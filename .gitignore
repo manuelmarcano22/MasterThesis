@@ -9,6 +9,7 @@
 # Latexmk
 *.fdb_latexmk
 *.main.fls
+*.fls
 
 # BibTeX
 *.bbl
