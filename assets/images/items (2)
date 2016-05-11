@@ -1,0 +1,15 @@
+
+@book{frank_accretion_2002,
+	title = {Accretion {Power} in {Astrophysics}: {Third} {Edition}},
+	shorttitle = {Accretion {Power} in {Astrophysics}},
+	url = {http://adsabs.harvard.edu/abs/2002apa..book.....F},
+	abstract = {1. Accretion as a source of energy; 2. Gas dynamics; 3. Plasma concepts; 
+4. Accretion in binary systems; 5. Accretion discs; 6. Accretion on to a
+compact object; 7. Active galactic nuclei; 8. Accretion discs in active
+galactic nuclei; 9. Accretion power in active galactic nuclei; 10. Thick
+discs; 11. Accretion flows.},
+	urldate = {2016-05-10TZ},
+	author = {Frank, Juhan and King, Andrew and Raine, Derek J.},
+	month = jan,
+	year = {2002}
+}
