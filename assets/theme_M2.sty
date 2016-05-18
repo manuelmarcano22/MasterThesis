@@ -6,17 +6,35 @@
 \usepackage{amsfonts}
 \usepackage{array}
 \usepackage{amssymb}
-\usepackage[round,authoryear,sort]{natbib}
+\usepackage[round]{natbib}
 \usepackage[T1]{fontenc}
 \usepackage[USenglish]{babel}
 \usepackage[bf]{caption}
 \usepackage{comment}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{placeins}
 
-%\setcounter{tocdepth}{4}
-%\setcounter{secnumdepth}{4}
 
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+%%%Set numbers bibliography
+%From 
+% http://tex.stackexchange.com/questions/141003/what-should-i-change-in-a-bst-file-in-order-to-have-numbered-entries-in-the-bibl
+\begin{comment}
+\usepackage{etoolbox}
+% increase \bibhang to take care of the numbers
+\setlength{\bibhang}{2pc}
+\makeatletter
+% patch \@lbibitem to print the current number before the authors
+\patchcmd{\@lbibitem}
+  {]}
+  {][\theNAT@ctr] }
+  {}{}
+\makeatother
+\end{comment}
 
 % Changer le style de chapter
 \usepackage{titlesec}
