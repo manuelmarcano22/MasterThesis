@@ -28,50 +28,43 @@ The data was reduced with version 1.2.1 of the MUSE Instrument Pipeline Recipes\
         \item The ESO Recipe Execution Tool (EsoRex)\footnote{EsoRex is written by the CPL group (Pipeline System Department) European Southern Observatory \url{http://www.eso.org/sci/software/cpl/esorex.html}} version 3.12.
 \end{itemize}
 
-All the data reduction was done calling EsoRex to execute the MUSE DRS recipes from a bash (version 4.3.11) script\footnote{All the configuration files for each of the called MUSE recipes used, the bash scripts, useful python (Python 2.7.6) scripts and other text files relevant for the data reduction can be found at \url{https://github.com/manuelmarcano22/muse2016}} (alternative this can be done via the Python bindings \citep{streicher_python_2012}). We summarize the main steps to produce the fully reduced datacube from the raw science and calibration data download from the ESO Science Archive MUSE Query Form: 
+All the data reduction was done calling EsoRex to execute the MUSE DRS recipes from a bash (version 4.3.11) script\footnote{All the configuration files for each of the called MUSE recipes used, the bash scripts, useful python (Python 2.7.6) scripts and other text files relevant for the data reduction can be found at \url{https://github.com/manuelmarcano22/muse2016}} (alternative this can be done via the Python bindings \citep{streicher_python_2012}). We summarize the main steps to produce the fully reduced datacube from the raw science and calibration data download from the ESO Science Archive MUSE Query Form. The data reduction steps can be divided into two categories, pre-processing and post-processing. The pre-processing part includes all the necesarry claibration to remove the instrument signature on the exposures. The post-preocessing then takes the resulting pixel table for each science observation and can resample them to create the datacube.
+
+
 
 \begin{enumerate}
         \item Calibration and pre-processing
                 \begin{enumerate}[I]
-        \item \textbf{Bias substraction}: Bias subtraction was done by combining 10 different bias images into one master bias file. Each bias is part of the calibration files taken by ESO every night.   
-        \item \textbf{Flat-fielding}
-        \item \textbf{Wavelenght calibration}: Detect arc emission lines and determine the wavelength solution for each slice.
-        \item \textbf{Line Spread Function}
-        \item \textbf{Geometrical calibration}
-        \item \textbf{Illumination Correction}:
+			\item \textbf{Bias substraction}: Bias subtraction was done by combining 10 different bias images into one master bias file. Each bias is part of the calibration files taken by ESO every night. A bias frame is dark image with no exposure time taken to account for the read out noise. (Recipe called \emph{muse_bias}). For this an all subsequent steps we used a table of additional bad pixels of the CCDs created for the MUSE commission runs. This bad pixel table is distributed along with the MUSE pipeline files. 
+			\item \textbf{Flat-fielding}: For the flat-field correction also 10 individual flat frames were combined into a master flat frame. The flat-field images are taking daily at the VLT as part of the standard calibration plan.  The master flat  contains  the  combined  pixel  values  of  the  raw  flat exposures. The purpose is to correct for uneven detector sensitivity. The recipe used was \emph{muse_flat}. Besides the master flat, the recipe also produces a \emph{trace table} containing polynomials defining the location of the slices on the CCD. 
+			\item \textbf{Wavelenght calibration}: For the wavelenght calibration 15 different arc lamp exposures were used. These is 3 per lamp (Ne, Xe, HgCd lamps). The recipe used is \emph{muse_wavecal}. It detects arc emission lines and determine the wavelength solution for each slice. The goal is to establish the pixel to wavelength equivalence with high precision.
+			\item \textbf{Line Spread Function}: The line-spread function is calculated with the recipe \emph{muse_lsf}. The lines spread function describes the broadening of spectral lines on a CCD. The recipe calculates this  wavelenght dependent function from 15 arc lamp exposures, and the wavelength solution calculated in the step above.  
+			\item \textbf{Geometrical calibration}: In this step the recipe \emph{muse_geometry} can be used to determine where the field of view . This creates a geometry table. A geometry table comes with the standard MUSE pipeline package as a static calibration files. The geometry table prepared for the third commisioning period was used in reducing the data. 
+			\item \textbf{Illumination Correction}: Flat-field with sky or twilight flats are taken weekly at the VLT. These are use to do large scale illumination correction. This is done calling the recipe \emph{muse_twilight}. For the illumination correction also an special purpose  illumination flat field called ILLUM can be used as an input to the recipe. This are taken throught the observing night. We use the one taken closest in time to the science data.  
     \end{enumerate}
 \item Post-processing
                 \begin{enumerate}[I]
-                        \item \textbf{Flux calibration}
-                        \item \textbf{Sky substraction}
-                        \item \textbf{Astrometry}
-                        \item \textbf{Combination} K-means from 
+			\item \textbf{Flux calibration}:  In this step a flux response curve from a standard star exposure is created. The end produc of the \emph{muse_standard} are tables with the response curve as derived from standard star and also the telluric absorption as derived from standard star.
+                        \item \textbf{Sky substraction}: Was not done as it is only needed if the observed object fills the fiel of viw that reasonbale sky spectrum cannto be obtained on the obsergationitserf. The sky ubstractionos done dir. No sky  
+                        \item \textbf{Astrometry}: Can compute astrometry solution, but the one shppied with the pipeline for the commisiing period was used. 
+			\item \textbf{Combination} a full data cube is created from a single exposure, the sky background is removed and the flux calibration and the astrometric calibration, created in the preceding processing steps, are applied. In this step the cubes a sampled to a common value $(0".2 \times 0".2 \times 1.25 \mathring{A})$ . The different for each region of the cluster where merged into a singe datacube and for the center dataxubes of indivial exposures were also created.  
+				
+				K-means from Creation fo the datacube from the above tables created telluric tables, responese curve, sky cntinuum. Datacibe from single expisures of combining after correctly aligning them creatinan tabkle of ofset. 
                 \end{enumerate}
 \end{enumerate}
 
 
 \subsection{Spectra extration and analysis}
 
-Astropy, a community-developed core Python package for Astronomy \citep{astropy_collaboration_astropy:_2013}
+The spectra substraction and analysis was carreid wtih QFits View and IRAF \citep{1986SPIE..627..733T}
+Astropy \citep{astropy_collaboration_astropy_2013}
 
-IRAF (image reduction and analysis facility) \footnote{IRAF is distributed by the National Optical Astronomy Observatories, which are operated by the Association of Universities for Research in Astronomy, Inc., under cooperative agreement with the National Science Foundation} \citep{1986SPIE..627..733T},   
+Plit
 
-
-PyRAF\footnote{PyRAF is a product of the Space Telescope Science Institute, which is operated by AURA for NASA. \url{http://www.stsci.edu/institute/software_hardware/pyraf}}.
-
-
-
-APLpy: This research made use of APLpy, an open-source plotting package for Python hosted at http://aplpy.github.com
-
-scikit-learn \citep{scikit-learn}
+This research made use of APLpy, an open-source plotting package for Python hosted at http://aplpy.github.com
 
 \begin{comment}
-Good data reduction steps in https://arxiv.org/pdf/1411.7667.pdf
-
-version (1.2.1) designed by \citeauthor{weilbacher_design_2012} (see \cite{weilbacher_design_2012}) 
-
-For the basic calibration we followed the standard procedure
-to reduce MUSE data: combine 10 bias images to form a master
+s images to form a master
 bias, combine 5 lamp-flat exposures, and use one exposure
 of each arc lamp to derive the wavelength solution. 11 skyflats,
 taken during the evening twilight preceding the science exposures,
@@ -83,5 +76,11 @@ The geometry of the instrument was derived f
 . These calibrations were found
 to be valid for the full period of the first commissioning run of
 the instrument and were also shipped with the MUSE pipeline.
+i
+Pix talbe
+he di
+erence between sky and
+calibration unit illumination. The result of this process is a
+large table (hereafter called a pixel-table) for each science frame. This table contains all pixel values corrected for bias and flat-field and their location on the detector. A geometri- cal calibration and the wavelength calibration solution were used to transform the detector coordinate positions to wave- lengths in Ångström and focal plane spatial coordinates 
 
 \end{comment}
