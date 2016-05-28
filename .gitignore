@@ -4,7 +4,7 @@
 *.toc
 
 # PDF output 
-*.pdf
+#*.pdf
 
 # Latexmk
 *.fdb_latexmk
