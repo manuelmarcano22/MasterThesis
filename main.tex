@@ -1,0 +1,65 @@
+\documentclass[11pt,a4paper,twoside]{report}
+\usepackage{assets/theme_M2}
+\author{Manuel Pichardo Marcano}
+\title{Master Thesis}
+\begin{document}
+\begin{titlepage}
+\setcounter{page}{0}
+	\noindent{Master ASEP}\\
+	Manuel Pichardo Marcano
+	
+	\begin{center}
+	\vspace*{\stretch{1}}
+	\textbf{MUSE integral field unit observations of the compact
+objects in the globular cluster NGC 6397}\\
+	~\\
+	%\textbf{\textit{\underline{Ceci est un titre}}}
+	\end{center}
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=12cm]{assets/images/museall.png}\\
+	\end{figure}
+	
+	\vspace*{\stretch{1}}
+	\noindent{\underline{Advisor} : Dr. Natalie Webb, IRAP. }
+\end{titlepage}
+
+% Page vide
+~
+\thispagestyle{empty}
+\clearpage
+
+
+\input{Content/abstract.tex}
+
+
+%TOC
+\vspace*{\stretch{1}} % centrage vertical
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+%Main Contenct
+
+\input{Content/Chapter1.tex}
+
+\input{Content/Chapter2.tex}
+
+\input{Content/Chapter3.tex}
+\input{Content/Chapter4.tex}
+\input{Content/Chapter5.tex}
+
+
+
+
+
+
+%\include{assets/aas_macros}  % contains journal macros used in bib
+%\renewcommand{\bibname}{\thispagestyle{empty}Bibliographie}
+\bibliographystyle{assets/Bib/apj} % apj, apsrev, plain, plainnat, abbrvnat, aa
+\bibliography{assets/Bib/thesis.bib}
+\thispagestyle{empty}
+\end{document}
+

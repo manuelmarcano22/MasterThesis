@@ -1,0 +1,57 @@
+\usepackage[left=2cm, right=2cm, top=3.75cm, bottom=4cm]{geometry}
+\usepackage{graphicx} 
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage[round]{natbib}
+\usepackage[T1]{fontenc}
+\usepackage[USenglish]{babel}
+\usepackage[bf]{caption}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{placeins}
+\usepackage{enumerate}
+\usepackage{subcaption}
+
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+%%%Set numbers bibliography
+%From 
+% http://tex.stackexchange.com/questions/141003/what-should-i-change-in-a-bst-file-in-order-to-have-numbered-entries-in-the-bibl
+\begin{comment}
+\usepackage{etoolbox}
+% increase \bibhang to take care of the numbers
+\setlength{\bibhang}{2pc}
+\makeatletter
+% patch \@lbibitem to print the current number before the authors
+\patchcmd{\@lbibitem}
+  {]}
+  {][\theNAT@ctr] }
+  {}{}
+\makeatother
+\end{comment}
+
+% Changer le style de chapter
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{Chapter \thechapter :}{1em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{2.3ex plus .2ex}
+
+% Style des pages
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{37pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+%\rhead[{\includegraphics[width=10mm]{assets/images/irap}}]{\textit{\thechapter~\leftmark}}
+\rhead[{Manuel Pichardo M.}]{\textit{\thechapter~\leftmark}}
+%\lhead[{\textit{\thesection~\rightmark}}]{ \includegraphics[width=10mm]{assets/images/irap}}
+\lhead[{\textit{\thesection~\rightmark}}]{Manuel Pichardo M.  }
+\rfoot[{\thepage}]{}
+\lfoot[{}]{\thepage}
