@@ -191,10 +191,6 @@ Heger, A., Fryer, C.~L., Woosley, S.~E., Langer, N., \& Hartmann, D.~H. 2003,
   \& {Grindlay}, J.~E. 2014, Monthly Notices of the Royal Astronomical
   Society,, 444, 443
 
-\bibitem[{Heuvel \& J(1976)}]{heuvel_late_1976}
-Heuvel, V.~D. \& J, E.~P. 1976, Structure and Evolution of Close Binary
-  Systems, 73
-
 \bibitem[{{Hewish} {et~al.}(1968){Hewish}, {Bell}, {Pilkington}, {Scott}, \&
   {Collins}}]{hewish_pulsar_1968}
 {Hewish}, A., {Bell}, S.~J., {Pilkington}, J.~D.~H., {Scott}, P.~F., \&
@@ -280,11 +276,6 @@ Kopal, Z. 1955, Annales d'Astrophysique, 18
 \bibitem[{Krzeminski \& Serkowski(1977)}]{krzeminski_extremely_1977}
 Krzeminski, W. \& Serkowski, K. 1977, The Astrophysical Journal, 216, L45
 
-\bibitem[{Kuulkers {et~al.}(2006)Kuulkers, Norton, Schwope, \&
-  Warner}]{kuulkers_x-rays_2006}
-Kuulkers, E., Norton, A., Schwope, A., \& Warner, B. 2006, in Compact stellar
-  {X}-ray sources, 421--460
-
 \bibitem[{Lattimer \& Prakash(2007)}]{lattimer_neutron_2007}
 Lattimer, J.~M. \& Prakash, M. 2007, Physics Reports, 442, 109
 
@@ -369,6 +360,11 @@ Schuerman, D.~W. 1972, Astrophysics and Space Science, 19, 351
 Shara, M.~M. 1989, Publications of the Astronomical Society of the Pacific,
   101, 5
 
+\bibitem[{{Shara} {et~al.}(1996){Shara}, {Bergeron}, {Gilliland}, {Saha}, \&
+  {Petro}}]{shara_CVsDN_1996}
+{Shara}, M.~M., {Bergeron}, L.~E., {Gilliland}, R.~L., {Saha}, A., \& {Petro},
+  L. 1996, Astrophysical Journal, 471, 804
+
 \bibitem[{Shara {et~al.}(2005)Shara, Hinkley, Zurek, Knigge, \&
   Dieball}]{shara_erupting_2005}
 Shara, M.~M., Hinkley, S., Zurek, D.~R., Knigge, C., \& Dieball, A. 2005, The
@@ -404,6 +400,11 @@ Taylor, J.~M., Grindlay, J.~E., Edmonds, P.~D., \& Cool, A.~M. 2001, The
 
 \bibitem[{{Tonry} \& {Davis}(1979)}]{tonry_cross_1979}
 {Tonry}, J. \& {Davis}, M. 1979, Astronomical Journal, 84, 1511
+
+\bibitem[{{van den Heuvel}(1976)}]{heuvel_late_1976}
+{van den Heuvel}, E.~P.~J. 1976, in IAU Symposium, Vol.~73, Structure and
+  Evolution of Close Binary Systems, ed. P.~{Eggleton}, S.~{Mitton}, \&
+  J.~{Whelan}, 35
 
 \bibitem[{Verbunt(1982)}]{verbunt_accretion_1982}
 Verbunt, F. 1982, Space Science Reviews, 32
