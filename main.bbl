@@ -1,4 +1,4 @@
-\begin{thebibliography}{93}
+\begin{thebibliography}{95}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Antonov(1962)}]{antonov_solution_1962}
@@ -71,6 +71,9 @@ Balman, S. 2012, Memorie della Societa Astronomica Italiana, 83, 585
   SPIE, Vol. 3355, Optical Astronomical Instrumentation, ed. S.~{D'Odorico},
   866--876
 
+\bibitem[{Beaulieu-Jones \& Greene(2016)}]{Beaulieu-Jones056473}
+Beaulieu-Jones, B.~K. \& Greene, C.~S. 2016, bioRxiv
+
 \bibitem[{Bogdanov {et~al.}(2010)Bogdanov, Berg, Heinke, Cohn, Lugger, \&
   Grindlay}]{bogdanov_chandra_2010}
 Bogdanov, S., Berg, M. v.~d., Heinke, C.~O., Cohn, H.~N., Lugger, P.~M., \&
@@ -127,6 +130,12 @@ De~Loore, C. W.~H. \& Doom, C. 1992, Astrophysics and {Space} {Science}
   Saffer, \& Sepinsky}]{de_marco_spectroscopic_2005}
 De~Marco, O., Shara, M.~M., Zurek, D., Ouellette, J.~A., Lanz, T., Saffer,
   R.~A., \& Sepinsky, J.~F. 2005, The Astrophysical Journal, 632, 894
+
+\bibitem[{{Dodson} {et~al.}(2016){Dodson}, {Vinsen}, {Wu}, {Popping}, {Meyer},
+  {Wicenec}, {Quinn}, {van Gorkom}, \& {Momjian}}]{Dodson_SKAAmazon_2016}
+{Dodson}, R., {Vinsen}, K., {Wu}, C., {Popping}, A., {Meyer}, M., {Wicenec},
+  A., {Quinn}, P., {van Gorkom}, J., \& {Momjian}, E. 2016, Astronomy and
+  Computing, 14, 8
 
 \bibitem[{Duncan \& Thompson(1992)}]{duncan_formation_1992}
 Duncan, R.~C. \& Thompson, C. 1992, The Astrophysical Journal, 392, L9
