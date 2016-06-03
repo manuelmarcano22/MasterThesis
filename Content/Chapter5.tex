@@ -1,25 +1,31 @@
 \chapter{Future Work}\label{chap:future}
 \thispagestyle{fancy}
 
+
+Altogether we have demonstrated how an IFU like MUSE can be used to study the population of compact objects in globular clusters. Here we exposed some hints that field CVs and GC population are different and the dynamics of the overall globular cluster plays a role on the formation of compact objects. Deeper observations at different epochs are needed to constrain the current models on the evolution of globular clusters and formation of binaries in them. MUSE is a well adapted instrument for the task as it allow us to study the variability and spectral features of a high number of objects simultaneously. This opens the way for the discovery of new objects in globular clusters. For this work we were limited by the very short exposure times. This is mainly because these observations took place during the commissioning period and so were constrained by the overall commission goals. MUSE is now in regular observation time and among its future and current targets there are a number of other galactic globular cluster. Also improvements in the instrument are expected soon, like for example the use of adaptive optic and the narrow field mode. This means  a vast number of new data set that can be exploited to improve our understanding on the formation of compact objects in globular clusters. 
+
 \section{Follow up Observation}
 
-Observing time to study  the neutron star low-mass X-ray binary in NGC 6397 with MUSE have been requested with Dr. Sebastien Guillot as the principal investigator. The goal is to constrain the equation of state of neutron stars by studying the H$\alpha$ line emission from the LMXB to be able to correctly model the atmosphere model. 
+We have requested deep observations to detect the hydrogen line and determine the nature of the atmosphere of the LMXB in the center of NGC 6397. This will allow us to use the correct models to model the X-ray spectra and male constraints on the neutron star equation of state. Further, if we can detect radial velocity motion we can constrain the neutron star mass, one of the free parameters in the modeling, and therefore obtain a more precise constraint on the equation of state. 
 
- Since MUSE have a big field of view and the LMXB is close to the cluster center, the observation will allow us to study also the CV population at the center. As a secondary objective, the long exposure of the core of NGC 6397 will allow a much deeper study of the sources in the cluster core. Moreover if H$\alpha$ line is detected the observation could be split to detect radial velocity variations. The big field of view will allow for the determination of the radial velocity shift in both the LMXB and the CVs.  
+
+ Since MUSE has a big field of view and the LMXB is close to the cluster center, the observation will allow us to study also the CV population at the center. As a secondary objective, the long exposure of the core of NGC 6397 will allow a much deeper study of the sources in the cluster core. Moreover if H$\alpha$ line is detected the observation could be split to detect radial velocity variations. The big field of view will allow for the determination of the radial velocity shift in both the LMXB and the CVs.  
     
 \section{Data analysis}
 
 \subsection{Optimal Spectra Extraction}
 
-The spectral extraction was done with QFitsView by adding the spectra from four adjacent pixels from the identified source in the datacube. QFitView allows to vary the number of pixels to add, and to obtain the spectra from the mean or median of the selected number of adjacent pixels. . The number of pixels to add were determined by visual examination of the spectra. A more systematic way was shown by \cite{horne_emission_1986}. This can potentially increase the quality of the extracted spectra. 
+The spectral extraction was done with QFitsView by adding the spectra from four adjacent pixels from the identified source in the datacube. QFitView allows to vary the number of pixels to add, and to obtain the spectra from the mean or median of the selected number of adjacent pixels. . The number of pixels to add were determined by visual examination of the spectra. An optimal way was shown by \cite{horne_emission_1986}. This can potentially increase the quality of the extracted spectra. 
 
 \subsection{Short Term variability}
 
-Besides the radial velocity shift with the individual short exposures we can examine the short term variability of the CVs. This can be done for the bright enough sources detectable in the short 25 seconds exposures. We plan to study the variations in the flux of strong emission lines like the H$\alpha$ line. This can help us determine the magnetic nature of the CVs as magnetic CVs are expected to be more variable in short timescales. 
+Besides the radial velocity shift with the individual short exposures we can examine the short term variability of the CVs. This can be done for the sources bright enough sources to be detected in the short 25 seconds exposures. We plan to study the variations in the flux of strong emission lines like the H$\alpha$ line. This can help us determine the magnetic nature of the CVs as magnetic CVs are expected to be more variable in short timescales. 
 
 \subsection{Processed data}
 
-As it was mentioned before the data for over 14000 extracted spectra from the MUSE observation of NGC 6397 is available online. This only include the extracted spectra with SNR > 5 and mainly includes main sequence stars, but a thoroughly search of can be done to identify possible binaries in the data set. The plan would be to examine the dataset looking for strong H$\alpha$ emitters as signs of an accretion disk. The data was extracted with a program developed by Sebastien Kamann called PAMPLEMUSE \citep{2013A&A...549A..71K}. This method can be use  to search in NGC 6397 and in futures observations of globular clusters with MUSE to identify prospects compact binaries candidates. 
+As it was mentioned before the data for over 14000 extracted spectra from the MUSE observation of NGC 6397 is available online. This only includes the extracted spectra with SNR > 5 and mainly includes main sequence stars, but a thoroughly search can be done to identify possible binaries in the data set. The plan would be to examine the data set looking for strong H$\alpha$ emitters as signs of an accretion disk. They can be identified by measuring the ratio of the flux from the spectra continuum to the flux from the H$\alpha$ lines for each available spectra. Searching for a flux ratio above a certain value can help us identify possible compact object candidates in the available processed data set. 
+
+%The data was extracted with a program developed by Sebastien Kamann called PAMPLEMUSE \citep{2013A&A...549A..71K}. This method can be use  to search in NGC 6397 and in futures observations of globular clusters with MUSE to identify prospects compact binaries candidates. 
 
 
 \section{Reproducibility}
