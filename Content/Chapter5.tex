@@ -3,33 +3,32 @@
 
 \section{Follow up Observation}
 
-    Dr. Guillot MUSE proposal for the qLMXB
+    Dr. Guillot MUSE proposal for the qLMXB allow to . Place to an as seconday science goals get deeper observation of the CVs. 
     
 \section{Data analysis}
-    
-    \begin{itemize}
-\item Optimal Spectra Extraction \citep{horne_emission_1986}
-\item Study short term variability. Need to account for change in seeing.
-\item Use the available 14 000 spectra and search for Compact objects. There might be some symbiotic or something. 
-\end{itemize}
+
+\subsection{Optimal Spectra Extraction}
+
+The spectral extraction was done with QFitsView by adding the spectra from four adjacent pixels from identified source in the datacube. QFitView allows to vary the number of pixels to add, and to obtain the spectra from the mean or median of the selected number of adjacent pixels. . The number of pixels to add were determined by visual examination of the spectra. A more systematic way was shown by \cite{horne_emission_1986}. This can potentially increase the quality of the extracted spectra. 
+
+\subsection{Short Term variability}
+
+Besides the radial velocity shift with the individual short exposures we can examine the short term variability of the CVs. This can be done for the bright enough sources detectable in the short 25 seconds exposures. We plan to study the variations in the flux of strong emission lines like the H$\alpha$ line. This can help us determine the magnetic nature of the CVs as magnetic CVs are expected to be more variable in short timescales. 
+
+\subsection{Processed data}
+
+As it was mentioned before the data for over 14000 extracted spectra from the MUSE observation of NGC 6397 is available online. This only include the extracted spectra with SNR > 5 and mainly includes main sequence stars, but a thoroughly search of can be done to identify possible binaries in the data set. The plan would be to examine the dataset looking for strong H$\alpha$ emitters as signs of an accretion disk. The data was extracted with a program developed by Sebastien Kamann called PAMPLEMUSE \citep{2013A&A...549A..71K}. This method can be use  to search in NGC 6397 and in futures observations of globular clusters with MUSE to identify prospects compact binaries candidates. 
+
 
 \section{Reproducibility}
-\begin{itemize}
-\item  Create a Docker container for the data reduction with necessary software and right version for the pipeline. Containers  define  a   computing   
-        environment that    captures    dependencies.   In  container-based systems,    the results are the same    
-        regardless  of  the host    system. Concinouns analysis when combine wih continous integration and source control repository
-
-a   script  capable of  running the analyses    from    start   to  finish. The continuous  integration provider runs   
-the latest  version of code in  the specified   Docker environment  without manual  intervention.       See \cite{Beaulieu-Jones056473} for a complete description  
-
-\item Create an Amazon Machine Image to be able to run analysis with the Amazon Elastic Compute Cloud. Reducing of MUSE data needs to be done in a computer with large storage and RAM memory. Amazon's Elastic Compute Cloud provide on-demand access to large-scale computational resources. An example of something like this done in academia is the work of \cite{ragan-kelley_collaborative_2013}
-
-Made use of a cloud computing environment, such as provided by the Amazon Web Service (AWS)
-
-More recently in astrophysics the approach to do the anamylsi on the cloud have been proposed fr the CHILES projec for the Square kilometer arrat. 
-
-See \cite{Dodson_SKAAmazon_2016} for the details. 
 
 
-\end{itemize}
+\subsection{Continuous Analysis}
+
+
+Being able to replicate and validate previous results is in the heart of science. When computer and data are involve this means to ensure access to the raw data and the workflow. One way of ensuring reproducibility on research areas involving computer work is creating an isolated computational environment that captures the versions and dependencies of all the used libraries and programs. Dockers\footnote{\url{https://www.docker.com/}} containers are a open source alternative that provides a fast and lightweight way to isolated the computational environment in which the data reduction and analysis was done. This  avoids any future dependencies or versions conflicts and allows the work to be portable and easily reproduced for validation or improvements in any operating system. Recently the termed 'continuous analysis' was introduced for container-based research flows if they include version control and specially continuous integration, a well established software development technique. The details are outlined in \cite{Beaulieu-Jones056473}. The plan is to adopt such workflows for future work done.   
+
+\subsection{Cloud Computing}
+
+Another challenge for astronomical data that applies for MUSE data is how computational demanding their processing is. For example, the recommended memory for a machine for creating the final data cube from a single MUSE observation and the required set of calibrations is 64 GB of memory. The same applies for the number of CPU cores and disk space. This is why the data reduction work was done in a institutional server with the minimum requirements. This is not optimal for portability and reproducibility. One option is to make use of a cloud computing environment, such as provided by the Amazon Web Service (AWS) that provide on-demand access to large-scale computational resources. An example of something like this done in academia for reproducibility goals is the work of \cite{ragan-kelley_collaborative_2013}. More recently in astrophysics this approach have been explored by members of the Square Kilometer Array organization and members of the project CHILES. See \cite{Dodson_SKAAmazon_2016} for the details. 
 
