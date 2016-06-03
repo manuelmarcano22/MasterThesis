@@ -1,4 +1,4 @@
-\begin{thebibliography}{99}
+\begin{thebibliography}{98}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Antonov(1962)}]{antonov_solution_1962}
@@ -252,11 +252,6 @@ Kaluzny, J., Thompson, I.~B., Krzeminski, W., \& Schwarzenberg-Czerny, A. 2006,
 Kamann, S., Husser, T.-O., Brinchmann, J., Emsellem, E., Weilbacher, P.~M.,
   Wisotzki, L., Wendt, M., Krajnović, D., Roth, M.~M., Bacon, R., \& Dreizler,
   S. 2016, ArXiv e-prints, 1602, arXiv:1602.01643
-
-\bibitem[{{Kamann} {et~al.}(2013){Kamann}, {Wisotzki}, \&
-  {Roth}}]{2013A&A...549A..71K}
-{Kamann}, S., {Wisotzki}, L., \& {Roth}, M.~M. 2013, Astronomy \& Astrophysics,
-  549, A71
 
 \bibitem[{Kepler \& Bradley(1995)}]{kepler_structure_1995}
 Kepler, S.~O. \& Bradley, P.~A. 1995, Baltic Astronomy, 4
