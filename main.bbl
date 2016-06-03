@@ -1,4 +1,4 @@
-\begin{thebibliography}{98}
+\begin{thebibliography}{99}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Antonov(1962)}]{antonov_solution_1962}
@@ -298,6 +298,10 @@ Krzeminski, W. \& Serkowski, K. 1977, The Astrophysical Journal, 216, L45
 
 \bibitem[{Lattimer \& Prakash(2007)}]{lattimer_neutron_2007}
 Lattimer, J.~M. \& Prakash, M. 2007, Physics Reports, 442, 109
+
+\bibitem[{{Lim} {et~al.}(2015){Lim}, {Diaz}, \& Laidler}]{pysynphot}
+{Lim}, P.~L., {Diaz}, R.~I., \& Laidler, V. 2015, PySynphot User’s Guide,
+  Baltimore, MD:STScI, \url{http://ssb.stsci.edu/pysynphot/docs/}
 
 \bibitem[{Lubow \& Shu(1975)}]{lubow_gas_1975}
 Lubow, S.~H. \& Shu, F.~H. 1975, The Astrophysical Journal, 198, 383
