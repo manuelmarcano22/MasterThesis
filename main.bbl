@@ -109,11 +109,11 @@ Cool, A.~M., Grindlay, J.~E., Cohn, H.~N., Lugger, P.~M., \& Slavin, S.~D.
 Cool, A.~M., Grindlay, J.~E., Krockenberger, M., \& Bailyn, C.~D. 1993, The
   Astrophysical Journal Letters, 410, L103
 
-\bibitem[{Coppejans {et~al.}(2015)Coppejans, Koerding, Miller-Jones, Rupen,
-  Knigge, Sivakoff, \& Groot}]{coppejans_novalike_2015}
-Coppejans, D.~L., Koerding, E.~G., Miller-Jones, J. C.~A., Rupen, M.~P.,
-  Knigge, C., Sivakoff, G.~R., \& Groot, P.~J. 2015, arXiv:1506.00003
-  [astro-ph], arXiv: 1506.00003
+\bibitem[{{Coppejans} {et~al.}(2015){Coppejans}, {K{\"o}rding}, {Miller-Jones},
+  {Rupen}, {Knigge}, {Sivakoff}, \& {Groot}}]{coppejans_novalike_2015}
+{Coppejans}, D.~L., {K{\"o}rding}, E.~G., {Miller-Jones}, J.~C.~A., {Rupen},
+  M.~P., {Knigge}, C., {Sivakoff}, G.~R., \& {Groot}, P.~J. 2015, Monthly
+  Notices of the Royal Astronomical Society, 451, 3801
 
 \bibitem[{Cropper(1990)}]{cropper_polars_1990}
 Cropper, M. 1990, Space Science Reviews, 54
@@ -171,8 +171,10 @@ Gehrz, R.~D., Truran, J.~W., Williams, R.~E., \& Starrfield, S. 1998,
 Gray, D. 2005, The Observation and Analysis of Stellar Photospheres (Cambridge
   University Press)
 
-\bibitem[{Grindlay(1999)}]{grindlay_magnetic_1999}
-Grindlay, J.~E. 1999, in , eprint: arXiv:astro-ph/9901356, 377
+\bibitem[{{Grindlay}(1999)}]{grindlay_magnetic_1999}
+{Grindlay}, J.~E. 1999, in Astronomical Society of the Pacific Conference
+  Series, Vol. 157, Annapolis Workshop on Magnetic Cataclysmic Variables, ed.
+  C.~{Hellier} \& K.~{Mukai}, 377
 
 \bibitem[{Grindlay(2006)}]{grindlay_compact_2006}
 Grindlay, J.~E. 2006, Advances in Space Research, 38, 2923
@@ -324,11 +326,14 @@ Madsen, J. 1999, in Hadrons in {Dense} {Matter} and {Hadrosynthesis}, ed.
 \bibitem[{{Marsh}(1990)}]{Marsh_secondary_1990}
 {Marsh}, T.~R. 1990, Astrophysical Journal, 357, 621
 
-\bibitem[{McKay {et~al.}(2004)McKay, Ballester, Banse, Izzo, Jung, Kiesgen,
-  Kornweibel, Lundin, Modigliani, Palsa, \& Sabet}]{mckay_common_2004}
-McKay, D.~J., Ballester, P., Banse, K., Izzo, C., Jung, Y., Kiesgen, M.,
-  Kornweibel, N., Lundin, L.~K., Modigliani, A., Palsa, R.~M., \& Sabet, C.
-  2004, in , 444--452
+\bibitem[{{McKay} {et~al.}(2004){McKay}, {Ballester}, {Banse}, {Izzo}, {Jung},
+  {Kiesgen}, {Kornweibel}, {Lundin}, {Modigliani}, {Palsa}, \&
+  {Sabet}}]{mckay_common_2004}
+{McKay}, D.~J., {Ballester}, P., {Banse}, K., {Izzo}, C., {Jung}, Y.,
+  {Kiesgen}, M., {Kornweibel}, N., {Lundin}, L.~K., {Modigliani}, A., {Palsa},
+  R.~M., \& {Sabet}, C. 2004, in Proceedings of the International Society for
+  Optical Engineering, Vol. 5493, Optimizing Scientific Return for Astronomy
+  through Information Technologies, ed. P.~J. {Quinn} \& A.~{Bridger}, 444--452
 
 \bibitem[{McLaughlin \& van~der Marel(2005)}]{mclaughlin_resolved_2005}
 McLaughlin, D.~E. \& van~der Marel, R.~P. 2005, The Astrophysical Journal
@@ -361,8 +366,12 @@ Ragan-Kelley, B., Walters, W.~A., McDonald, D., Riley, J., Granger, B.~E.,
   Gonzalez, A., Knight, R., Perez, F., \& Caporaso, J.~G. 2013, The ISME
   Journal, 7, 461
 
-\bibitem[{Reisenegger(2005)}]{reisenegger_magnetic_2005}
-Reisenegger, A. 2005, in  (AIP), 263--273
+\bibitem[{Reisenegger {et~al.}(2005)Reisenegger, Prieto, Benguria, Lai, \&
+  Araya}]{reisenegger_magnetic_2005}
+Reisenegger, A., Prieto, J., Benguria, R., Lai, D., \& Araya, P. 2005, in
+  {Magnetic fields in the universe, from laboratory and stars to primordial
+  structures, Angra dos Reis, Brazil, 28 November - 3 December 2004}, Vol. 784,
+  263--273, [,263(2005)]
 
 \bibitem[{Rhoades \& Ruffini(1974)}]{rhoades_maximum_1974}
 Rhoades, C.~E. \& Ruffini, R. 1974, Physical Review Letters, 32, 324
@@ -441,9 +450,11 @@ Verbunt, F., Bunk, W.~H., Ritter, H., \& Pfeffermann, E. 1997, Astronomy and
 Warner, B. 2003, Cataclysmic {Variable} {Stars} (Cambridge University Press)
 
 \bibitem[{Weilbacher {et~al.}(2012)Weilbacher, Streicher, Urrutia, Jarno,
-  Pécontal-Rousset, Bacon, \& Böhm}]{weilbacher_design_2012}
-Weilbacher, P.~M., Streicher, O., Urrutia, T., Jarno, A., Pécontal-Rousset,
-  A., Bacon, R., \& Böhm, P. 2012, 84510B
+  P{\'e}contal-Rousset, Bacon, \& B{\"o}hm}]{weilbacher_design_2012}
+Weilbacher, P.~M., Streicher, O., Urrutia, T., Jarno, A., P{\'e}contal-Rousset,
+  A., Bacon, R., \& B{\"o}hm, P. 2012, in SPIE Astronomical Telescopes+
+  Instrumentation, International Society for Optics and Photonics,
+  84510B--84510B
 
 \bibitem[{Wickramasinghe \& Ferrario(2000)}]{wickramasinghe_magnetism_2000}
 Wickramasinghe, D.~T. \& Ferrario, L. 2000, Publications of the Astronomical
