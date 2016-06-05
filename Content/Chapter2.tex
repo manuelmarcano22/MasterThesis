@@ -42,7 +42,6 @@ All the data reduction was done calling EsoRex to execute the MUSE DRS recipes f
     
     \item{\textbf{Pixel table creation}}: This step removes all the instrumental signatures on the science exposures and converts them from an image to a large table (called a pixel-table). Calling the recipe \emph{muse\_scibasic}, for each science frame is a pixel table is created from the calibration file produced above (master bias, master flat, geometry table, bad pixel table, twilight correction). These tables are the input frames in the subsequent post-processing phase.
     \end{enumerate}
-    \clearpage
 \item Post-processing
                 \begin{enumerate}[I]
 			\item \textbf{Flux calibration}:  In this step a flux response curve from a standard star exposure is created. The end product of the \emph{muse\_standard} are tables with the response curve as derived from standard star and the telluric absorption.

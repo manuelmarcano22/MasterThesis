@@ -1,4 +1,4 @@
-\usepackage[left=2cm, right=2cm, top=3.75cm, bottom=4cm]{geometry}
+\usepackage[left=1.70cm, right=1.70cm, top=3.70cm, bottom=3.75cm]{geometry}
 \usepackage{graphicx} 
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
@@ -16,8 +16,12 @@
 \usepackage{placeins}
 \usepackage{enumerate}
 \usepackage{subcaption}
-
-
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+%\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+%\makeatother
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
 
