@@ -35,6 +35,12 @@
 \title{Master Thesis}
 \usepackage{assets/theme_M2}
 
+%glossary
+\input{Content/acro.tex}
+\makeglossaries
+
+
+
 \begin{document}
 
 \begin{titlepage}
@@ -124,7 +130,10 @@ Dr. Sebastien \textsc{Guillot}  % Supervisor's Name
 \input{Content/Chapter3.tex}
 \input{Content/Chapter4.tex}
 \input{Content/Chapter5.tex}
+\input{Content/Chapter6.tex}
 
+\glsaddall
+\printglossary[type=\acronymtype,title=Acronyms, nonumberlist, nopostdot]
 
 
 %\include{assets/aas_macros}  % contains journal macros used in bib
