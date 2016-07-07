@@ -1,4 +1,4 @@
-\begin{thebibliography}{99}
+\begin{thebibliography}{100}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Antonov(1962)}]{antonov_solution_1962}
@@ -298,8 +298,11 @@ Kopal, Z. 1955, Annales d'Astrophysique, 18
 \bibitem[{Krzeminski \& Serkowski(1977)}]{krzeminski_extremely_1977}
 Krzeminski, W. \& Serkowski, K. 1977, The Astrophysical Journal, 216, L45
 
+\bibitem[{Lattimer \& Prakash(2001)}]{lattimereos2001}
+Lattimer, J.~M. \& Prakash, M. 2001, The Astrophysical Journal, 550, 426
+
 \bibitem[{Lattimer \& Prakash(2007)}]{lattimer_neutron_2007}
-Lattimer, J.~M. \& Prakash, M. 2007, Physics Reports, 442, 109
+---. 2007, Physics Reports, 442, 109
 
 \bibitem[{{Lim} {et~al.}(2015){Lim}, {Diaz}, \& Laidler}]{pysynphot}
 {Lim}, P.~L., {Diaz}, R.~I., \& Laidler, V. 2015, PySynphot User’s Guide,
