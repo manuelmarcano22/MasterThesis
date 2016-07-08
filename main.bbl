@@ -1,5 +1,17 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{101}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Amaro-Seoane {et~al.}(2012)Amaro-Seoane, Aoudia, Babak, Binétruy,
+  Berti, Bohé, Caprini, Colpi, Cornish, Danzmann, Dufaux, Gair, Jennrich,
+  Jetzer, Klein, Lang, Lobo, Littenberg, McWilliams, Nelemans, Petiteau,
+  Porter, Schutz, Sesana, Stebbins, Sumner, Vallisneri, Vitale, Volonteri, \&
+  Ward}]{elisa2012}
+Amaro-Seoane, P., Aoudia, S., Babak, S., Binétruy, P., Berti, E., Bohé, A.,
+  Caprini, C., Colpi, M., Cornish, N.~J., Danzmann, K., Dufaux, J.-F., Gair,
+  J., Jennrich, O., Jetzer, P., Klein, A., Lang, R.~N., Lobo, A., Littenberg,
+  T., McWilliams, S.~T., Nelemans, G., Petiteau, A., Porter, E.~K., Schutz,
+  B.~F., Sesana, A., Stebbins, R., Sumner, T., Vallisneri, M., Vitale, S.,
+  Volonteri, M., \& Ward, H. 2012, Classical and Quantum Gravity, 29, 124016
 
 \bibitem[{Antonov(1962)}]{antonov_solution_1962}
 Antonov, V.~A. 1962, Solution of the problem of stability of stellar system
