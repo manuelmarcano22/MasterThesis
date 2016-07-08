@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,twoside]{report}
+\documentclass[bibliography=totoc,11pt,a4paper,twoside]{report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % University Assignment Title Page 
 % LaTeX Template
@@ -108,21 +108,41 @@ Dr. Sebastien \textsc{Guillot}  % Supervisor's Name
 ~
 %\thispagestyle{empty}
 %\clearpage
+\newcommand\frontmatter{%
+%    \cleardoublepage
+  %\@mainmatterfalse
+  \pagenumbering{roman}}
+
+\newcommand\mainmatter{%
+%    \cleardoublepage
+ % \@mainmattertrue
+  \pagenumbering{arabic}}
+
+
+\frontmatter
 
 
 \input{Content/abstract.tex}
-\newgeometry{left=3cm,right=2.5cm,top=1cm,bottom=2.5cm}
 \input{Content/Chapter6.tex}
+\newgeometry{left=3cm,right=3.0cm,top=1in,bottom=1.0in}
+
+
+
 
 %TOC
 %\vspace*{\stretch{1}} % centrage vertical
 \thispagestyle{empty}
 \tableofcontents
 \thispagestyle{empty}
+
+\listoffigures
+\listoftables
+\thispagestyle{empty}
 %\clearpage
 \restoregeometry  
 
 %Main Contenct
+\mainmatter
 
 \input{Content/Chapter1.tex}
 
@@ -132,8 +152,6 @@ Dr. Sebastien \textsc{Guillot}  % Supervisor's Name
 \input{Content/Chapter4.tex}
 \input{Content/Chapter5.tex}
 
-\glsaddall
-\printglossary[type=\acronymtype,title=Acronyms, nonumberlist, nopostdot]
 
 
 %\include{assets/aas_macros}  % contains journal macros used in bib
@@ -141,5 +159,8 @@ Dr. Sebastien \textsc{Guillot}  % Supervisor's Name
 \bibliographystyle{assets/Bib/apj} % apj, apsrev, plain, plainnat, abbrvnat, aa
 \bibliography{assets/Bib/thesis.bib}
 \thispagestyle{empty}
+\glsaddall
+\printglossary[type=\acronymtype,title=List of Acronyms, nonumberlist, nopostdot]
+\addcontentsline{toc}{chapter}{List of Acronyms}
 \end{document}
 
